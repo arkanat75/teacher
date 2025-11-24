@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Английский для детей 6–12 — репетитор</title>
+  <style>
+    :root{
+      --bg1:#0a0f1f; --bg2:#1b1f3a; --brand:#ff5ea8; --brand-2:#a78bfa; --brand-3:#22c55e;
+      --ink:#e5e7eb; --muted:#94a3b8; --card:#0f162e; --shadow:0 10px 20px rgba(0,0,0,.45); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--ink)}
+    a{color:var(--brand-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:auto;padding:16px 24px}
+
+    /* Top navigation */
+    .topbar{position:sticky;top:0;z-index:100;backdrop-filter:saturate(140%) blur(6px);background:rgba(6,10,26,.72);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900}
+    .brand-badge{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),#ff9f1a);box-shadow:var(--shadow);color:#fff}
+    .nav a{padding:10px 12px;border-radius:12px}
+
+    /* Hero */
+    header.hero{padding:32px 0}
+    .hero h1{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0 0 8px}
+    .btn{padding:12px 16px;border-radius:12px;font-weight:800;display:inline-block;box-shadow:var(--shadow)}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),#ff9f1a);color:#fff}
+
+    /* Lists & cards */
+    .hero-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .hero-emoji{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--card);box-shadow:var(--shadow)}
+    section{scroll-margin-top:76px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);margin:22px 0}
+    @media(max-width:800px){.grid-2,.grid-3,.hero-list{grid-template-columns:1fr}}
+
+    /* Avatar placeholder */
+    .avatar{width:100%;max-width:60px;aspect-ratio:1/1;overflow:hidden; border-radius:16px;background:linear-gradient(135deg,#111831,#172045);border:1px solid rgba(255,255,255,.08);display:grid;place-items:center;color:#c7d2fe;font-weight:900}
+
+    /* Prices */
+    .price{font-size:28px;font-weight:900}
+  </style>
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-badge">A</div>
+        <div>Английский 6–12</div>
+      </div>
+      <nav aria-label="Навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#benefits">Что ждёт ребёнка</a>
+        <a href="#formats">Форматы</a>
+        <a href="#method">Как учимся</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>Английский для младших школьников: Учимся. Играем. Говорим.</h1>
+      <a class="btn btn-primary" href="#contacts">Записаться на пробное занятие</a>
+      <div class="divider"></div>
+      <div class="hero-list">
+        <span><span class="hero-emoji">🎲</span>Игровые задания</span>
+        <span><span class="hero-emoji">🗣️</span>Разговорная практика</span>
+        <span><span class="hero-emoji">💬</span>Чат поддержки с учеником</span>
+        <span><span class="hero-emoji">💡</span>Обратная связь с родителями</span>
+        <span><span class="hero-emoji">📘</span>Помощь со школьной программой</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>Здравствуйте! Я — ваш репетитор английского 💛</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Коротко обо мне</h3>
+        <p class="muted">Опыт работы с детьми 20+ лет. Фокус на раннем говорении, фонетике и понимании речи. Создаю яркие карточки, игры и задания — чтобы ребёнку было интересно и результат был заметен быстро.</p>
+      </div>
+      <div class="card" style="display:flex;align-items:center;justify-content:center">
+        <img src="photo.jpeg" alt="Моё фото">
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits (What awaits child) -->
+  <section id="benefits" class="container">
+    <h2>Что ждёт ребёнка</h2>
+    <div class="grid-3">
+      <div class="card"><h3>📖 Чтение с нуля</h3><p class="muted">Пошагово ставим звук–буква, частые слова и фразы — ребёнок уверенно начинает читать.</p></div>
+      <div class="card"><h3>🧠 Грамматика — просто</h3><p class="muted">Мини‑правила и игры вместо скучных таблиц — ребёнок понимает и применяет на практике.</p></div>
+      <div class="card"><h3>✅ Самостоятельная домашка</h3><p class="muted">Учимся делать ДЗ без слёз: понятные инструкции, примеры и поддержка в чате.</p></div>
+    </div>
+  </section>
+
+  <!-- Formats -->
+  <section id="formats" class="container">
+    <h2>Форматы занятий</h2>
+    <div class="grid-2">
+      <div class="card"><h3>🧒 Индивидуально</h3><p class="muted">Персональный план под интересы ребёнка. Темп комфортный, результат стабильный.</p></div>
+      <div class="card"><h3>👫 Мини‑группа 2–4</h3><p class="muted">Игры, мини‑проекты и диалоги. Учимся слушать и отвечать друг другу, как в жизни.</p></div>
+    </div>
+  </section>
+
+  <!-- Method -->
+  <section id="method" class="container">
+    <h2>Как учимся</h2>
+    <div class="grid-3">
+      <div class="card"><h3>👂 Слушаем</h3><p class="muted">Звуки, слова и короткие диалоги — развиваем восприятие речи.</p></div>
+      <div class="card"><h3>🎲 Играем</h3><p class="muted">Мемори, квесты и карточки помогают запомнить слова легко и весело.</p></div>
+      <div class="card"><h3>🗣️ Говорим</h3><p class="muted">Мини‑диалоги, фразы из жизни — тренируем уверенность в речи.</p></div>
+    </div>
+  </section>
+
+  <!-- Prices -->
+  <section id="prices" class="container">
+    <h2>Цены и длительность</h2>
+    <div class="grid-3">
+      <div class="card"><h3>Индивидуально · 30 мин</h3><div class="price">1000 ₽</div><p class="muted">Зависит от расписания и выбранного времени.</p></div>
+      <div class="card"><h3>Индивидуально · 45 мин</h3><div class="price">1500 ₽</div><p class="muted">Зависит от расписания и выбранного времени.</p></div>
+      <div class="card"><h3>Мини‑группа · 45 мин</h3><div class="price">1000 ₽</div><p class="muted">2–4 ученика одного уровня.</p></div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="contacts" class="container">
+    <h2>Контакты</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Оставить заявку</h3>
+        <form onsubmit="return handleSubmit(event)">
+          <input id="name" name="name" placeholder="Ваше имя" required style="width:100%;padding:12px 14px;border-radius:12px;border:1px solid #334155;background:#0b1229;color:#e5e7eb;margin-bottom:10px" />
+          <input id="child" name="child" placeholder="Возраст ребёнка" required style="width:100%;padding:12px 14px;border-radius:12px;border:1px solid #334155;background:#0b1229;color:#e5e7eb;margin-bottom:10px" />
+          <input id="contact" name="contact" placeholder="Телефон или e‑mail" required style="width:100%;padding:12px 14px;border-radius:12px;border:1px solid #334155;background:#0b1229;color:#e5e7eb;margin-bottom:10px" />
+          <textarea name="msg" rows="4" placeholder="Коротко о запросе (уровень, цель)" style="width:100%;padding:12px 14px;border-radius:12px;border:1px solid #334155;background:#0b1229;color:#e5e7eb;margin-bottom:10px"></textarea>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+          <p id="form-note" class="muted" style="margin:10px 0 0">Если почтовый клиент не открылся, напишите по контактам справа.</p>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Быстрые контакты</h3>
+        <ul style="list-style:none;padding-left:0;margin:0">
+          <li style="margin-bottom:10px">📧 E‑mail: <a href="mailto:hello@english-kids.example">hello@english-kids.example</a></li>
+          <li style="margin-bottom:10px">📱 Телефон: <a href="tel:+10000000000">+1 (000) 000‑00‑00</a></li>
+          <li style="margin-bottom:10px">💬 Telegram: <a href="https://t.me/your_nickname" target="_blank" rel="noopener">@your_nickname</a></li>
+          <li>🟢 WhatsApp: <a href="https://wa.me/10000000000" target="_blank" rel="noopener">написать в WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container"><p>© <span id="y"></span> Репетитор английского для детей 6–12</p></div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+    function handleSubmit(e){e.preventDefault();const f=e.target;const subject=encodeURIComponent('Заявка: английский для детей');const body=encodeURIComponent(`Имя: ${f.name.value}\nВозраст ребёнка: ${f.child.value}\nКонтакт: ${f.contact.value}\nСообщение: ${(f.msg.value||'').trim()}`);window.location.href=`mailto:hello@english-kids.example?subject=${subject}&body=${body}`;document.getElementById('form-note').textContent='Готово! Если письмо не создалось — свяжитесь по контактам справа.';return false}
+  </script>
+</body>
+</html>
